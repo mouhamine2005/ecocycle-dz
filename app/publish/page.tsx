@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { ArrowLeft, MapPin, Camera, User, Phone, DollarSign, Scale, Package } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -23,7 +23,7 @@ interface ScanResult {
   recommendations: string[]
 }
 
-export default function PublishPage() {
+function PublishPageContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const { saveListingToDB, isLoading: dbLoading, error: dbError } = useMarketplaceDB()
@@ -449,5 +449,13 @@ export default function PublishPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function PublishPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <PublishPageContent />
+    </Suspense>
   )
 }
