@@ -2,6 +2,7 @@ import "@testing-library/jest-dom"
 import { afterEach } from "vitest"
 import { cleanup } from "@testing-library/react"
 import { vi } from "vitest"
+import React from "react"
 
 // Mock Next.js router
 vi.mock("next/navigation", () => ({
@@ -19,7 +20,9 @@ vi.mock("next/navigation", () => ({
 
 // Mock Next.js image
 vi.mock("next/image", () => ({
-  default: ({ src, alt, ...props }: any) => <img src={src || "/placeholder.svg"} alt={alt} {...props} />,
+  default: ({ src, alt, ...props }: any) => {
+    return React.createElement("img", { src: src || "/placeholder.svg", alt, ...props })
+  },
 }))
 
 // Cleanup after each test
