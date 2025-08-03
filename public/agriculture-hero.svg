@@ -1,0 +1,47 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#background)"/>
+  
+  <!-- Ground -->
+  <path d="M0 320 Q150 310 300 320 T600 320 L600 400 L0 400 Z" fill="#22c55e"/>
+  
+  <!-- Trees -->
+  <circle cx="100" cy="280" r="40" fill="#16a34a"/>
+  <rect x="95" y="280" width="10" height="40" fill="#92400e"/>
+  
+  <circle cx="500" cy="270" r="35" fill="#16a34a"/>
+  <rect x="495" y="270" width="10" height="35" fill="#92400e"/>
+  
+  <!-- Plants -->
+  <path d="M200 320 Q210 310 220 320 Q225 315 230 320" stroke="#15803d" stroke-width="3" fill="none"/>
+  <path d="M380 320 Q390 310 400 320 Q405 315 410 320" stroke="#15803d" stroke-width="3" fill="none"/>
+  
+  <!-- Sun -->
+  <circle cx="500" cy="80" r="30" fill="#fbbf24"/>
+  <path d="M500 20 L500 40 M540 80 L520 80 M527 53 L513 67 M527 107 L513 93 M460 80 L480 80 M473 53 L487 67 M473 107 L487 93 M500 120 L500 140" stroke="#fbbf24" stroke-width="2"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="150" cy="70" rx="20" ry="12" fill="white" opacity="0.8"/>
+  <ellipse cx="170" cy="65" rx="25" ry="15" fill="white" opacity="0.8"/>
+  <ellipse cx="160" cy="55" rx="15" ry="10" fill="white" opacity="0.8"/>
+  
+  <!-- Agriculture field -->
+  <rect x="250" y="310" width="100" height="10" fill="#84cc16" opacity="0.7"/>
+  <rect x="255" y="300" width="3" height="20" fill="#65a30d"/>
+  <rect x="265" y="305" width="3" height="15" fill="#65a30d"/>
+  <rect x="275" y="302" width="3" height="18" fill="#65a30d"/>
+  <rect x="285" y="308" width="3" height="12" fill="#65a30d"/>
+  <rect x="295" y="304" width="3" height="16" fill="#65a30d"/>
+  <rect x="305" y="306" width="3" height="14" fill="#65a30d"/>
+  <rect x="315" y="301" width="3" height="19" fill="#65a30d"/>
+  <rect x="325" y="307" width="3" height="13" fill="#65a30d"/>
+  <rect x="335" y="303" width="3" height="17" fill="#65a30d"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="background" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb"/>
+      <stop offset="100%" style="stop-color:#e0f2fe"/>
+    </linearGradient>
+  </defs>
+</svg>
